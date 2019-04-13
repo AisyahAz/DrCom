@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".AddDataPengetahuan">
+
+<ScrollView
+    android:id="@+id/scrollView2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/black"
+                    android:text="Gejala Kerusakan"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"
+                    android:layout_marginBottom="7dp"/>
+                <Spinner
+                    android:id="@+id/spinner_gejala"
+                    android:layout_width="match_parent"
+                    android:layout_margin="16dp"
+                    android:scrollbarSize="100dp"
+                    android:layout_height="wrap_content">
+                </Spinner>
+
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_marginTop="7dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:textColor="@android:color/black"
+                    android:text="Pertanyaan"
+                    android:textStyle="bold"/>
+                <EditText
+                    android:id="@+id/EditText_addPertanyaan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textMultiLine" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_marginTop="7dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@android:color/black"
+                    android:text="Jawaban Ya"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:textColor="@android:color/black"
+                    android:text="Pilih Gejala"
+                    android:textStyle="bold" />
+                <Spinner
+                    android:id="@+id/spinner_gejala1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="25dp"
+                    android:scrollbarSize="100dp"
+                    ></Spinner>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:textColor="@android:color/black"
+                    android:text="Pilih Masalah"
+                    android:textStyle="bold" />
+                <Spinner
+                    android:id="@+id/spinner_masalah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_weight="1"
+                    android:scrollbarSize="100dp"
+                    android:layout_marginBottom="25dp"></Spinner>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_marginTop="7dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@android:color/black"
+                    android:text="Jawaban Tidak"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:textColor="@android:color/black"
+                    android:text="Pilih Gejala"
+                    android:textStyle="bold" />
+                <Spinner
+                    android:id="@+id/spinner_gejala2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="25dp"
+                    android:scrollbarSize="100dp"></Spinner>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:textColor="@android:color/black"
+                    android:text="Pilih Masalah"
+                    android:textStyle="bold"/>
+                <Spinner
+                    android:id="@+id/spinner_masalah1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_weight="1"
+                    android:scrollbarSize="100dp"
+                    android:layout_marginBottom="25dp"></Spinner>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:drawableLeft="@drawable/ic_queue_black_24dp"
+            android:background="@drawable/buttonstylegreen"
+            android:id="@+id/button_addPengetahuan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:text="Tambahkan Data"/>
+    </LinearLayout>
+
+</ScrollView>
+
+
+</RelativeLayout>
